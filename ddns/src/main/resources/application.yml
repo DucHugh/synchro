@@ -1,17 +1,3 @@
-server:
-  port: 8080
-
 spring:
-  application:
-    name: DDNS
-  datasource:
-    url: jdbc:mysql://localhost:3306/synchro_manage?serverTimezone=UTC
-    username: hugh
-    password: 1qaz2wsx
-    driver-class-name: com.mysql.cj.jdbc.Driver
-  jpa:
-    open-in-view: true
-    show-sql: true
-    hibernate:
-      ddl-auto: update
-
+  profiles:
+    active: dev

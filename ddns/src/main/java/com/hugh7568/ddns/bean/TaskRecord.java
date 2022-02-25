@@ -16,8 +16,5 @@ public class TaskRecord extends BaseBean{
 
     private String taskType;
 
-    /**
-     *
-     */
     private Long domainId;
 }
