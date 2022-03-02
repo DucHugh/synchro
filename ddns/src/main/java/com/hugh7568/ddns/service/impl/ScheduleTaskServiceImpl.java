@@ -1,6 +1,6 @@
 package com.hugh7568.ddns.service.impl;
 
-import com.hugh7568.ddns.bean.ScheduleTask;
+import com.hugh7568.ddns.bean.po.ScheduleTask;
 import com.hugh7568.ddns.mapper.ScheduleTaskRepository;
 import com.hugh7568.ddns.service.ScheduleTaskService;
 import org.springframework.beans.factory.annotation.Autowired;

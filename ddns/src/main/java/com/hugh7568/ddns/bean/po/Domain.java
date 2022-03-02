@@ -1,5 +1,6 @@
-package com.hugh7568.ddns.bean;
+package com.hugh7568.ddns.bean.po;
 
+import com.hugh7568.ddns.bean.BaseBean;
 import com.hugh7568.ddns.enums.DomainType;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;

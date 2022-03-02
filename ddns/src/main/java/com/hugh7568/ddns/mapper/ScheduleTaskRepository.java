@@ -1,6 +1,6 @@
 package com.hugh7568.ddns.mapper;
 
-import com.hugh7568.ddns.bean.ScheduleTask;
+import com.hugh7568.ddns.bean.po.ScheduleTask;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

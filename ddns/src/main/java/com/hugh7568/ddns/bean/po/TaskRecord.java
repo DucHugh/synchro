@@ -1,4 +1,6 @@
-package com.hugh7568.ddns.bean;
+package com.hugh7568.ddns.bean.po;
+
+import com.hugh7568.ddns.bean.BaseBean;
 
 /**
  * 任务执行信息

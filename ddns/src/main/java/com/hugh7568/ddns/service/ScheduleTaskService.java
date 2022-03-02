@@ -1,6 +1,6 @@
 package com.hugh7568.ddns.service;
 
-import com.hugh7568.ddns.bean.ScheduleTask;
+import com.hugh7568.ddns.bean.po.ScheduleTask;
 
 /**
  * ScheduleTask任务接口
