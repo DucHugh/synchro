@@ -1,4 +1,4 @@
-package com.hugh7568.ddns.bean;
+package com.hugh7568.ddns.bean.po;
 
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
@@ -12,13 +12,12 @@ import java.util.Date;
 /**
  * schedule_task 定时任务配置文件
  *
- * @author yuanr
+ * @author Hugh
  */
 @Data
 @Entity
 @Table(name = "schedule_task")
 @ApiModel(value = "ddns.bean.ScheduleTask定时任务")
-//@Data
 public class ScheduleTask implements Serializable {
     /**
      * 主键

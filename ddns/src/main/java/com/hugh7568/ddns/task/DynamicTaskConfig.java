@@ -1,7 +1,6 @@
-package com.hugh7568.ddns.config;
+package com.hugh7568.ddns.task;
 
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.scheduling.annotation.SchedulingConfigurer;
 import org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler;
@@ -13,16 +12,16 @@ import java.util.concurrent.Executor;
 /**
  * 动态定时任务基础配置
  *
- * @author yuanr
+ * @author Hugh
  * @date 2022/01/05 09:10
  **/
-@Configuration
+@Slf4j
 @EnableScheduling
 public abstract class DynamicTaskConfig implements SchedulingConfigurer {
 
     @Override
     public void configureTasks(ScheduledTaskRegistrar taskRegistrar) {
-        System.out.println("开始任务");
+        log.info("开始定时任务");
         taskRegistrar.setScheduler(taskScheduler());
         taskRegistrar.addTriggerTask(
                 //定时任务逻辑
@@ -40,7 +39,6 @@ public abstract class DynamicTaskConfig implements SchedulingConfigurer {
      *
      * @return 线程池配置
      */
-    @Bean(destroyMethod = "shutdown")
     public Executor taskScheduler() {
         ThreadPoolTaskScheduler taskScheduler = new ThreadPoolTaskScheduler();
         taskScheduler.setPoolSize(10);
