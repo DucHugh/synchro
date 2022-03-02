@@ -6,7 +6,7 @@ import org.springframework.web.client.RestTemplate;
 /**
  * 捕获当前外网IP
  *
- * @author yuanr
+ * @author Hugh
  * @date 2022/01/17 09:12
  **/
 public class IPUtil {

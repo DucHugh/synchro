@@ -10,7 +10,7 @@ import java.util.Date;
 /**
  * 基础类--共同字段
  *
- * @author yuanr
+ * @author Hugh
  * @date 2022/02/09 10:49
  **/
 public class BaseBean {

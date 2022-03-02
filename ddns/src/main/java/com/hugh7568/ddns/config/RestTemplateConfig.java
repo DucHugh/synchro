@@ -9,7 +9,7 @@ import org.springframework.web.client.RestTemplate;
 /**
  * RestTemplate的配置文件
  *
- * @author yuanr
+ * @author Hugh
  * @date 2022/01/04 16:34
  **/
 @Configuration

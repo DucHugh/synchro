@@ -11,12 +11,11 @@ import java.util.Optional;
 /**
  * ScheduleTask任务业务实现类
  *
- * @author yuanr
+ * @author Hugh
  * @date 2022/02/14 10:41
  **/
 @Service
 public class ScheduleTaskServiceImpl implements ScheduleTaskService {
-
 
     @Autowired
     private ScheduleTaskRepository scheduleTaskRepository;

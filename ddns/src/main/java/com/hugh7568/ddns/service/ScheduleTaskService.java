@@ -5,10 +5,14 @@ import com.hugh7568.ddns.bean.ScheduleTask;
 /**
  * ScheduleTask任务接口
  *
- * @author yuanr
+ * @author Hugh
  * @date 2022/02/14 10:40
  **/
 public interface ScheduleTaskService {
-
-    public ScheduleTask getCron();
+    /**
+     * 获取数据库定时任务表达式
+     *
+     * @return 定时任务信息
+     */
+    ScheduleTask getCron();
 }

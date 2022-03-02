@@ -3,7 +3,7 @@ package com.hugh7568.ddns.enums;
 /**
  * 域名类别
  *
- * @author yuanr
+ * @author Hugh
  * @date 2022/02/09 11:06
  **/
 public enum DomainType {

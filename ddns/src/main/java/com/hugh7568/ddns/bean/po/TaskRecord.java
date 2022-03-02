@@ -3,7 +3,7 @@ package com.hugh7568.ddns.bean;
 /**
  * 任务执行信息
  *
- * @author yuanr
+ * @author Hugh
  * @date 2022/02/09 11:22
  **/
 public class TaskRecord extends BaseBean{

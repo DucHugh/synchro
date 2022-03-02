@@ -13,7 +13,7 @@ import javax.persistence.Table;
 /**
  * 域名信息
  *
- * @author yuanr
+ * @author Hugh
  * @date 2022/02/09 10:52
  **/
 @Data
