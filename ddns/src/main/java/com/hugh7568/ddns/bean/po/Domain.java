@@ -1,6 +1,7 @@
 package com.hugh7568.ddns.bean.po;
 
 import com.hugh7568.ddns.bean.BaseBean;
+import com.hugh7568.ddns.enums.DomainLevel;
 import com.hugh7568.ddns.enums.DomainType;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
@@ -15,7 +16,6 @@ import javax.persistence.Table;
  * 域名信息
  *
  * @author Hugh
- * @date 2022/02/09 10:52
  **/
 @Data
 @EqualsAndHashCode(callSuper = true)
@@ -40,6 +40,11 @@ public class Domain extends BaseBean {
     private String domainName;
 
     /**
+     * 供应商唯一ID
+     */
+    private String providerId;
+
+    /**
      * 域名IP地址
      */
     private String domainAddress;
@@ -49,8 +54,7 @@ public class Domain extends BaseBean {
     private String domainDescription;
 
     /**
-     * TODO 校正枚举类型传值
-     * 域名种类
+     * 解析协议
      */
     private DomainType domainType;
 
@@ -58,5 +62,10 @@ public class Domain extends BaseBean {
      * 是否参与更新
      */
     private Boolean isUpdate;
+
+    /**
+     * 域名级别
+     */
+    private DomainLevel domainLevel;
 
 }
