@@ -1,5 +1,10 @@
 package com.hugh7568.ddns.enums;
 
+import org.apache.commons.lang3.StringUtils;
+
+import java.util.Arrays;
+import java.util.Optional;
+
 /**
  * 域名类别
  *
@@ -45,5 +50,14 @@ public enum DomainType {
     /**
      * 反向解析则是指将IP地址映射到域名上，需要您与IDC机房或主机服务商联系实现
      */
-    PTR,
+    PTR;
+
+    public static DomainType getByName(String name) {
+
+        Optional<DomainType> typeOptional = Arrays.stream(DomainType.values())
+                .filter(domainType -> StringUtils.equalsIgnoreCase(name, domainType.name()))
+                .findAny();
+
+        return typeOptional.orElseThrow(RuntimeException::new);
+    }
 }
