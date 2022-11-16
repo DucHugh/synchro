@@ -29,15 +29,14 @@ public class Domain extends BaseBean {
     private Long domainId;
 
     /**
-     * 上级域名ID
-     * 顶级域名ID为零
-     */
-    private Long baseDomainId;
-
-    /**
      * 域名名称
      */
     private String domainName;
+
+    /**
+     * 二级域名
+     */
+    private String secondDomainName;
 
     /**
      * 供应商唯一ID
