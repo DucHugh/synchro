@@ -1,0 +1,23 @@
+#设置端口
+server:
+  port: 54000
+
+#spring设置
+spring:
+  application:
+    name: DDNS
+  datasource:
+    url: jdbc:mysql://localhost:3306/synchro_manage?serverTimezone=UTC
+    username: hugh
+    password: 1qaz2wsx
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    open-in-view: true
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  redis:
+    host: 127.0.0.1
+    database: 0
+    port: 6379
+    password: 1qaz2wsx
