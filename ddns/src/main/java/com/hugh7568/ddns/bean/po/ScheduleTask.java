@@ -25,7 +25,7 @@ public class ScheduleTask implements Serializable {
     @Id
     @ApiModelProperty(value = "主键")
     @Column(name = "task_id")
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(generator = "JDBC",strategy = GenerationType.AUTO)
     private Integer taskId;
 
     /**
@@ -51,24 +51,28 @@ public class ScheduleTask implements Serializable {
      */
     @NotEmpty
     @ApiModelProperty(value = "定时任务锁true正在执行,false未执行")
+    @Column(name = "task_lock")
     private Boolean taskLock;
 
     /**
      * 任务描述
      */
     @ApiModelProperty(value = "任务描述")
+    @Column(name = "task_comment")
     private String taskComment;
 
     /**
      * 更新时间
      */
     @ApiModelProperty(value = "更新时间")
+    @Column(name = "update_time")
     private Date updateTime;
 
     /**
      * 创建时间
      */
     @ApiModelProperty(value = "创建时间")
+    @Column(name = "create_time")
     private Date createTime;
 
     private static final long serialVersionUID = 1L;

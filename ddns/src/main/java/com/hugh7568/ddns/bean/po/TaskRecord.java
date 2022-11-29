@@ -8,7 +8,7 @@ import com.hugh7568.ddns.bean.BaseBean;
  * @author Hugh
  * @date 2022/02/09 11:22
  **/
-public class TaskRecord extends BaseBean{
+public class TaskRecord extends BaseBean {
 
     private Long taskId;
 
